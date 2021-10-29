@@ -1,15 +1,20 @@
 import React from "react";
+import { TouchableOpacityProps } from "react-native";
 
 import { ButtonTitle, ButtonWrapper, Icon, IconWrapper } from "./styles";
 import DiscordImg from "../../assets/discord.png";
 
-export default function ButtonIcon() {
+interface IButtonIconProps extends TouchableOpacityProps {
+  title: string;
+}
+
+export default function ButtonIcon({ title, ...rest }: IButtonIconProps) {
   return (
-    <ButtonWrapper>
+    <ButtonWrapper {...rest}>
       <IconWrapper>
         <Icon source={DiscordImg} />
       </IconWrapper>
-      <ButtonTitle>Entre com Discord</ButtonTitle>
+      <ButtonTitle>{title}</ButtonTitle>
     </ButtonWrapper>
   );
 }

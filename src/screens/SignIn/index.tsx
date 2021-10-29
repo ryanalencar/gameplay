@@ -30,7 +30,7 @@ export default function SignIn() {
           Crie grupos para jogar seus games{`\n`}
           favoritos com seus amigos
         </SubTitle>
-        <ButtonIcon />
+        <ButtonIcon title="Entrar com Discord" activeOpacity={0.8} />
       </Content>
     </Container>
   );
