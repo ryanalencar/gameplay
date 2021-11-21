@@ -22,12 +22,11 @@ export default function SignIn() {
       <IllustrationImage source={IllustrationImg} resizeMode="stretch" />
       <Content>
         <Title>
-          Organize {`\n`}
-          suas jogatinas{`\n`}
-          facilmente{`\n`}
+          Conecte-se {"\n"}e organize suas{"\n"}
+          jogatinas{"\n"}
         </Title>
         <SubTitle>
-          Crie grupos para jogar seus games{`\n`}
+          Crie grupos para jogar seus games{"\n"}
           favoritos com seus amigos
         </SubTitle>
         <ButtonIcon title="Entrar com Discord" activeOpacity={0.8} />
